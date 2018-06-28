@@ -17,25 +17,22 @@ const List = styled.ul`
 
 const ListItem = styled.li`
   display: inline-block;
-  margin: 23px;
-  margin-right: 0px;
+  margin: 20px;
 `;
 
 const Link = styled.a`
   text-decoration: none;
-  font-size: 14px;
+  font-size: 20px;
   color: inherit;
-  &::after {
-    content: '';
-    display: block;
-    width: 0px;
-    border-radius: 3px;
-    height: 3px;
-    background-color: ${Colors.orange};
-    transition: all ease-in-out 150ms;
-  }
-  &:hover::after {
-    width: 100%;
+
+  /*for slow color change*/
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  -o-transition: color 0.2s ease-out;
+  -ms-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+  &:hover {
+    color: ${Colors.red};
   }
 `;
 
@@ -46,13 +43,13 @@ class Navbar extends React.Component<{}, {}> {
         <div style={{ width: '90%' }}>
           <List>
             <ListItem>
-              <Link href={'#about'}>about me</Link>
+              <Link href={'#experience'}>experience</Link>
             </ListItem>
             <ListItem>
               <Link href={'#projects'}>projects</Link>
             </ListItem>
             <ListItem>
-              <Link href={'#contacts'}>contacts</Link>
+              <Link href={'#contact'}>contact</Link>
             </ListItem>
           </List>
         </div>
