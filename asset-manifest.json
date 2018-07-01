@@ -1,10 +1,11 @@
 {
   "main.css": "static/css/main.0c6ce989.css",
   "main.css.map": "static/css/main.0c6ce989.css.map",
-  "main.js": "static/js/main.3384a424.js",
-  "main.js.map": "static/js/main.3384a424.js.map",
+  "main.js": "static/js/main.2dbda390.js",
+  "main.js.map": "static/js/main.2dbda390.js.map",
   "static/media/Arrow.svg": "static/media/Arrow.2b59923e.svg",
   "static/media/Github.svg": "static/media/Github.71edeaef.svg",
   "static/media/Group.svg": "static/media/Group.4a9a39ed.svg",
-  "static/media/LinkedIn.svg": "static/media/LinkedIn.dd9622eb.svg"
+  "static/media/LinkedIn.svg": "static/media/LinkedIn.dd9622eb.svg",
+  "static/media/PersonalWebsite.png": "static/media/PersonalWebsite.4d6def40.png"
 }
