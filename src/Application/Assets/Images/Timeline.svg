@@ -1,7 +1,0 @@
-<svg width="25" height="448" viewBox="0 0 25 448" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 0V70" transform="translate(13 375)" stroke="#FF3F3E" stroke-width="5" stroke-linecap="round"/>
-<path d="M0 0V229" transform="translate(13 111)" stroke="#FF3F3E" stroke-width="5" stroke-linecap="round"/>
-<circle cx="12.5" cy="12.5" r="10" transform="translate(0 345)" stroke="#FF3F3E" stroke-width="5"/>
-<path d="M0 0V70" transform="translate(13 3)" stroke="#FF3F3E" stroke-width="5" stroke-linecap="round"/>
-<circle cx="12.5" cy="12.5" r="10" transform="translate(0 79)" stroke="#FF3F3E" stroke-width="5"/>
-</svg>
