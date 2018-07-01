@@ -1,11 +1,12 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import Colors from '../Themes/Colors';
 
 const Container = styled.div`
   padding-left: 15vw;
   padding-right: 15vw;
-  padding-bottom: 10vh;
-  background-color: #fff;
+  padding-bottom: 7vw;
+  background-color: ${Colors.white};
   justify-content: center;
   display: flex;
 `;
@@ -24,6 +25,9 @@ const Description = styled.div`
 const Image = styled.img`
   border-radius: 5px;
   max-width: 30vw;
+  border-width: 3px;
+  border-style: solid;
+  border-color: ${Colors.grey};
 `;
 
 const TextContainer = styled.div`
