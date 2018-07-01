@@ -48,8 +48,7 @@ class Experience extends React.Component<{}, {}> {
               description="Development of an iPad application to help orchestras to better 
 manage their scores and their notes. 
       
-      + React Native
-      + Javascript"
+      + React Native"
             />
             <Card
               title="Novabase/Collab"
