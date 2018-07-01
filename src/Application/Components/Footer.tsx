@@ -2,6 +2,9 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { Colors } from '../Themes/Colors';
 
+const github = require('../Assets/Images/Github.svg');
+const linkedIn = require('../Assets/Images/LinkedIn.svg');
+
 const Container = styled.div`
   background-color: ${Colors.lightGrey};
   height: 250px;
@@ -18,10 +21,15 @@ const IconContainer = styled.div`
   justify-content: center;
 `;
 
-const Icon = styled.a`
+const IconLink = styled.a`
   text-decoration: none;
   color: inherit;
   margin-right: 23px;
+`;
+
+const Icon = styled.img`
+  max-height: 50px;
+  max-width: 50px;
 `;
 
 const FooterText = styled.div`
@@ -31,15 +39,17 @@ const FooterText = styled.div`
 class Footer extends React.Component<{}, {}> {
   render() {
     return (
-      <Container>
+      <Container id="contact">
         <IconContainer>
-          <Icon href="https://github.com/DNDXIII"> Github </Icon>
-          <Icon href="https://www.linkedin.com/in/didier-dias-6a7364122/">
-            LinkedIn
-          </Icon>
+          <IconLink href="https://github.com/DNDXIII">
+            <Icon src={github} />
+          </IconLink>
+          <IconLink href="https://www.linkedin.com/in/didier-dias-6a7364122/">
+            <Icon src={linkedIn} />
+          </IconLink>
         </IconContainer>
         <FooterText>
-          website developed and mantained by <b>Didier Dias</b>
+          Website developed and mantained by <b>Didier Dias</b>
         </FooterText>
       </Container>
     );

@@ -8,7 +8,6 @@ const timeline = require('../Assets/Images/Group.svg');
 const collabIcon = require('../Assets/Images/collab.png');
 
 const Container = styled.div`
-  height: 100vh;
   background-color: ${Colors.lightGrey};
 `;
 
@@ -19,7 +18,9 @@ const Title = styled.h1`
   font-weight: bold;
 `;
 
-const Timeline = styled.img``;
+const Timeline = styled.img`
+  margin-bottom: 10vh;
+`;
 
 const ContentContainer = styled.h1`
   display: flex;
@@ -30,13 +31,12 @@ const ContentContainer = styled.h1`
 const CardContainer = styled.h1`
   display: flex;
   flex-direction: column;
-  padding-top: 3vh;
 `;
 
 class Experience extends React.Component<{}, {}> {
   render() {
     return (
-      <Container>
+      <Container id="experience">
         <Title>Work Experience</Title>
         <ContentContainer>
           <Timeline src={timeline} />
