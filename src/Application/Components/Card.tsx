@@ -2,9 +2,11 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  width: 50%;
+  width: 30vw;
   padding: 3%;
   margin-left: 100px;
+  margin-bottom: 5vh;
+  background-color: #fff;
 
   border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
@@ -52,13 +54,34 @@ const Description = styled.div`
   font-size: 14px;
 `;
 
+const Icon = styled.img`
+  float: right;
+  width: 50px;
+  height: 50px;
+`;
+
+const HeaderContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const TitleContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 class Card extends React.Component<CardProps, {}> {
   render() {
-    const { title, subtitle, description } = this.props;
+    const { title, subtitle, description, icon } = this.props;
     return (
       <Container>
-        <Title>{title}</Title>
-        <SubTitle>{subtitle}</SubTitle>
+        <HeaderContainer>
+          <TitleContainer>
+            <Title>{title}</Title>
+            <SubTitle>{subtitle}</SubTitle>
+          </TitleContainer>
+          <Icon src={icon} />
+        </HeaderContainer>
         <Description>{description}</Description>
       </Container>
     );
@@ -69,6 +92,7 @@ interface CardProps {
   title: string;
   subtitle: string;
   description: string;
+  icon: string;
 }
 
 export default Card;

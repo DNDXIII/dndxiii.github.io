@@ -1,8 +1,9 @@
 import * as React from 'react';
 import styled from 'styled-components';
-// import { Colors } from '../Themes/Colors';
+import { Colors } from '../Themes/Colors';
 
 const Container = styled.div`
+  background-color: ${Colors.lightGrey};
   height: 250px;
   width: 100%;
   display: flex;
