@@ -36,7 +36,7 @@ const CardContainer = styled.h1`
 class Experience extends React.Component<{}, {}> {
   render() {
     return (
-      <Container id="experience">
+      <Container id="about">
         <Title>Work Experience</Title>
         <ContentContainer>
           <Timeline src={timeline} />
@@ -49,8 +49,7 @@ class Experience extends React.Component<{}, {}> {
 manage their scores and their notes. 
       
       + React Native
-      + Javascript
-      + Picha"
+      + Javascript"
             />
             <Card
               title="Novabase/Collab"
