@@ -62,7 +62,8 @@ to the configurations and push them to the servers in production.
       + Javascript
       + C#
       + .Net Core
-      + MVC"
+      + MVC
+      git"
             />
           </CardContainer>
         </ContentContainer>
