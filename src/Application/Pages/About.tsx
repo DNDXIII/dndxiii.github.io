@@ -4,9 +4,7 @@ import Navbar from '../Components/Navbar';
 
 const arrow = require('../Assets/Images/Arrow.svg');
 
-const Container = styled.div`
-  height: 100vh;
-`;
+const Container = styled.div``;
 
 const Title = styled.h1`
   margin-top: 30vh;

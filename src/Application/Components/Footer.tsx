@@ -34,6 +34,12 @@ const Icon = styled.img`
 
 const FooterText = styled.div`
   margin-top: 23px;
+  text-align: center;
+  white-space: pre-wrap;
+`;
+
+const Email = styled.a`
+  color: inherit;
 `;
 
 class Footer extends React.Component<{}, {}> {
@@ -49,6 +55,11 @@ class Footer extends React.Component<{}, {}> {
           </IconLink>
         </IconContainer>
         <FooterText>
+          Send me an email at:
+          <Email href="mailto:didier.n.dias@gmail.com" target="_top">
+            didier.n.dias@gmail.com
+          </Email>
+          <br />
           Website developed and mantained by <b>Didier Dias</b>
         </FooterText>
       </Container>
