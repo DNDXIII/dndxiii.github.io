@@ -1,37 +1,37 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import Navbar from '../Components/Navbar';
-
-const arrow = require('../Assets/Images/Arrow.svg');
+import Colors from '../Themes/Colors';
 
 const Container = styled.div``;
 
+const Bar = styled.div`
+  height: 1vh;
+  width: 100%;
+  background-color: ${Colors.red};
+`;
+
 const Title = styled.h1`
-  margin-top: 30vh;
+  margin-top: 20vh;
   margin-bottom: 10vh;
   font-size: 72px;
   text-align: center;
-  font-weight: bold;
 `;
 
-const Description = styled.h1`
+const Description = styled.h2`
   font-size: 24px;
   margin-left: 10vw;
+  font-weight: normal;
   margin-right: 10vw;
   text-align: center;
-`;
-
-const ArrowIcon = styled.img`
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15vh;
+  margin-bottom:20vh;
 `;
 
 class About extends React.Component<{}, {}> {
   render() {
     return (
       <Container>
+        <Bar />
         <Navbar />
         <Title>Hello, I’m Didier</Title>
         <Description>
@@ -39,9 +39,10 @@ class About extends React.Component<{}, {}> {
           Engineering at Faculade de Ciências e Tecnologia. I just recently got
           my Bachelor's degree, on the same area. I love to learn, especially
           new technologies, and I am always trying to develop some personal
-          projects in order to improve myself.
+          projects in order to improve myself. I currently work at Accenture as a .Net 
+          Developer where I help improving a Web Application to facilitate insurance 
+          companies on their expertise assessments.
         </Description>
-        <ArrowIcon src={arrow} />
       </Container>
     );
   }

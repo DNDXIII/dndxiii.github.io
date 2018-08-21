@@ -11,6 +11,7 @@ const Container = styled.div``;
 const Title = styled.h1`
   font-size: 48px;
   padding-bottom: 10vh;
+  padding-top: 7vh;
   text-align: center;
   font-weight: bold;
 `;

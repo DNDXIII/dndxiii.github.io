@@ -1,12 +1,13 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import Colors from '../Themes/Colors';
 
 const Container = styled.div`
-  width: 30vw;
+  width: 40vw;
   padding: 3%;
   margin-left: 100px;
   margin-bottom: 5vh;
-  background-color: #fff;
+  background-color: ${Colors.white};
 
   border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
@@ -40,17 +41,18 @@ const Container = styled.div`
 
 const Title = styled.div`
   font-size: 24px;
-  font-weight: bold;
+  font-weight:bold;
 `;
 
 const SubTitle = styled.div`
   padding-top: 1%;
+  color: ${Colors.grey};
   font-size: 18px;
 `;
 
 const Description = styled.div`
   white-space: pre-wrap;
-  padding-top: 5%;
+  padding-top: 8%;
   font-size: 14px;
 `;
 

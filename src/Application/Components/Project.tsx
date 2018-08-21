@@ -25,9 +25,8 @@ const Description = styled.div`
 const Image = styled.img`
   border-radius: 5px;
   max-width: 30vw;
-  border-width: 3px;
-  border-style: solid;
-  border-color: ${Colors.grey};
+  max-height: 15vw;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3);
 `;
 
 const TextContainer = styled.div`

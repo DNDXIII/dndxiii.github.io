@@ -12,7 +12,8 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
-  padding-top: 5vh;
+  padding-top: 7vh;
+  padding-bottom: 10vh;
   font-size: 48px;
   text-align: center;
   font-weight: bold;
@@ -20,15 +21,19 @@ const Title = styled.h1`
 
 const Timeline = styled.img`
   margin-bottom: 10vh;
+
+  @media (max-width: 1023px) {
+    display: none;
+  }
 `;
 
-const ContentContainer = styled.h1`
+const ContentContainer = styled.div`
   display: flex;
-  padding-left: 20vw;
-  padding-right: 20vw;
+  align-items: center;
+  justify-content:center;
 `;
 
-const CardContainer = styled.h1`
+const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
 `;
@@ -46,10 +51,12 @@ class Experience extends React.Component<{}, {}> {
               subtitle="Full Stack Developer"
               icon={tcvIcon}
               description="Development of an iPad application to help orchestras to better 
-manage their scores and their notes. 
+manage their scores and their notes by being able to take notes 
+and synchronize the sheets between themselves.
       
       + React Native
-      + Javascript"
+      + JavaScript
+      + NodeJs"
             />
             <Card
               title="Novabase/Collab"
