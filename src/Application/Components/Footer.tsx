@@ -33,7 +33,7 @@ const Icon = styled.img`
 `;
 
 const FooterText = styled.div`
-  margin-top: 23px;
+  margin: 24px 5vw 0px; 
   text-align: center;
   white-space: pre-wrap;
 `;

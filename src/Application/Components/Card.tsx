@@ -4,10 +4,13 @@ import Colors from '../Themes/Colors';
 
 const Container = styled.div`
   width: 40vw;
-  padding: 3%;
-  margin-left: 100px;
+  padding: 14px;
   margin-bottom: 5vh;
   background-color: ${Colors.white};
+
+  @media (max-width: 1023px) {
+    width: 80vw;
+  }
 
   border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
@@ -45,14 +48,14 @@ const Title = styled.div`
 `;
 
 const SubTitle = styled.div`
-  padding-top: 1%;
+  margin-top: 1%;
   color: ${Colors.grey};
   font-size: 18px;
 `;
 
 const Description = styled.div`
   white-space: pre-wrap;
-  padding-top: 8%;
+  margin-top: 8%;
   font-size: 14px;
 `;
 
@@ -60,6 +63,10 @@ const Icon = styled.img`
   float: right;
   width: 50px;
   height: 50px;
+
+  @media (max-width: 350px) {
+    display: none;
+  }
 `;
 
 const HeaderContainer = styled.div`

@@ -16,6 +16,9 @@ const Title = styled.h1`
   margin-bottom: 10vh;
   font-size: 72px;
   text-align: center;
+  @media (max-width: 1023px) {
+    font-size: 62px;
+  }
 `;
 
 const Description = styled.h2`
@@ -25,6 +28,10 @@ const Description = styled.h2`
   margin-right: 10vw;
   text-align: center;
   margin-bottom:20vh;
+
+  @media (max-width: 1023px) {
+    font-size: 18px;
+  }
 `;
 
 class About extends React.Component<{}, {}> {

@@ -14,6 +14,10 @@ const Title = styled.h1`
   padding-top: 7vh;
   text-align: center;
   font-weight: bold;
+
+  @media (max-width: 1023px) {
+    font-size: 40px;
+  }
 `;
 
 class PersonalProjects extends React.Component<{}, {}> {

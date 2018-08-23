@@ -18,6 +18,10 @@ const List = styled.ul`
 const ListItem = styled.li`
   display: inline-block;
   margin: 20px;
+
+  @media (max-width: 1023px) {
+    margin: 20px 12px;
+  }
 `;
 
 const Link = styled.a`

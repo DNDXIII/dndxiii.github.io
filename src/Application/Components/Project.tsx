@@ -3,12 +3,20 @@ import styled from 'styled-components';
 import Colors from '../Themes/Colors';
 
 const Container = styled.div`
-  padding-left: 15vw;
-  padding-right: 15vw;
-  padding-bottom: 7vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-bottom: 7vw;
+  padding-bottom: 4vh;
   background-color: ${Colors.white};
   justify-content: center;
   display: flex;
+  align-items:center;
+
+  @media (max-width: 767px) {
+    flex-direction:column;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3);
+  }
 `;
 
 const Title = styled.div`
@@ -20,6 +28,7 @@ const Description = styled.div`
   white-space: pre-wrap;
   padding-top: 5%;
   font-size: 14px;
+  
 `;
 
 const Image = styled.img`
@@ -27,6 +36,13 @@ const Image = styled.img`
   max-width: 30vw;
   max-height: 15vw;
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 4vw;
+
+   @media (max-width: 767px) {
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: none;
+  }
 `;
 
 const TextContainer = styled.div`

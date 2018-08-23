@@ -13,14 +13,20 @@ const Container = styled.div`
 
 const Title = styled.h1`
   padding-top: 7vh;
-  padding-bottom: 10vh;
+  margin-bottom: 10vh;
   font-size: 48px;
   text-align: center;
   font-weight: bold;
+
+  @media (max-width: 1023px) {
+    font-size: 40px;
+  }
 `;
 
 const Timeline = styled.img`
   margin-bottom: 10vh;
+
+  margin-right: 100px;
 
   @media (max-width: 1023px) {
     display: none;
@@ -30,7 +36,7 @@ const Timeline = styled.img`
 const ContentContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 `;
 
 const CardContainer = styled.div`
