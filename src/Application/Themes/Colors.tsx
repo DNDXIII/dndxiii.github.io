@@ -3,7 +3,8 @@ export enum Colors {
   red = '#FF3F3E',
   white = '#FFFFFF',
   lightGrey = '#F5F5F5',
-  grey = '#828282'
+  grey = '#828282',
+  black = '#000000'
 }
 
 export default Colors;

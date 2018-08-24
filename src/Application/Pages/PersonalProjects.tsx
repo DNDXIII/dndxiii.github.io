@@ -10,7 +10,7 @@ const Container = styled.div``;
 
 const Title = styled.h1`
   font-size: 48px;
-  padding-bottom: 10vh;
+  margin-bottom: 13vh;
   padding-top: 7vh;
   text-align: center;
   font-weight: bold;
@@ -33,6 +33,7 @@ and can play every game that the original can.
     + Rust
     + SDL2"
           image={chip8}
+          url="https://github.com/DNDXIII/chip8"
         />
 
         <Project
@@ -46,7 +47,9 @@ work experience.
     + HTML 5
     + CSS 3"
           image={personalWebsite}
-          textLeft={true}
+          // Only display text to the left if the window is large enough
+          textLeft={window.innerWidth > 767}
+          url="https://github.com/DNDXIII/dndxiii.github.io"
         />
 
         <Project
@@ -69,7 +72,8 @@ and water the plants as needed, sending a notification to the users phone.
     + IoT
     + IFTTT"
           image={personalWebsite}
-          textLeft={true}
+          // Only display text to the left if the window is large enough
+          textLeft={window.innerWidth > 767}
         />
       </Container>
     );

@@ -1,19 +1,18 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import Colors from '../Themes/Colors';
+const github = require('../Assets/Images/Github.svg');
 
 const Container = styled.div`
-  margin-left: 15vw;
-  margin-right: 15vw;
-  margin-bottom: 7vw;
-  padding-bottom: 4vh;
+  margin: auto;
+  margin-bottom: 13vh;
+  max-width: 80vw;
   background-color: ${Colors.white};
-  justify-content: center;
   display: flex;
-  align-items:center;
+  justify-content: center;
 
   @media (max-width: 767px) {
-    flex-direction:column;
+    flex-direction: column;
     border-radius: 5px;
     box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3);
   }
@@ -28,7 +27,6 @@ const Description = styled.div`
   white-space: pre-wrap;
   padding-top: 5%;
   font-size: 14px;
-  
 `;
 
 const Image = styled.img`
@@ -36,9 +34,8 @@ const Image = styled.img`
   max-width: 30vw;
   max-height: 15vw;
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3);
-  margin-bottom: 4vw;
 
-   @media (max-width: 767px) {
+  @media (max-width: 767px) {
     max-width: 100%;
     max-height: 100%;
     box-shadow: none;
@@ -48,18 +45,77 @@ const Image = styled.img`
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin: 3vh 3vw;
+`;
+
+const Button = styled.a`
+  margin-top: 3vh;
+  border-radius: 21px;
+  height: 42px;
+  width: 42px;
+  background-color: ${Colors.black};
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  -webkit-transition: width 0.2s;
+  transition: width 0.2s;
+
+  @media (max-width: 767px) {
+    margin-left: auto;
+    width: 40%;
+    min-width: 120px;
+    color: ${Colors.white};
+
+    & div {
+      color: ${Colors.white};
+    }
+  }
+
+  &:hover {
+    width: 180px;
+    color: ${Colors.white};
+  }
+
+  &:hover div {
+    color: ${Colors.white};
+  }
+`;
+
+const ButtonText = styled.div`
+  margin-left: 10%;
+  color: transparent;
+`;
+
+const ButtonImage = styled.img`
+  background-size: 20px 20px;
+  max-width: 42px;
+  max-height: 42px;
+`;
+
+const ButtonImageContainer = styled.div`
+  background-color: ${Colors.white};
+  border-radius: 20px;
+  max-width: 41px;
+  max-height: 41px;
 `;
 
 class Project extends React.Component<ProjectProps, {}> {
   render() {
-    const { title, description, image, textLeft = false } = this.props;
+    const { title, description, image, textLeft = false, url } = this.props;
 
     const text = (
       <TextContainer>
         <Title>{title}</Title>
         <Description>{description}</Description>
+        {url ? (
+          <Button href={url}>
+            <ButtonImageContainer>
+              <ButtonImage src={github} />
+            </ButtonImageContainer>
+            <ButtonText>Github</ButtonText>
+          </Button>
+        ) : null}
       </TextContainer>
     );
 
@@ -78,6 +134,7 @@ interface ProjectProps {
   description: string;
   image: string;
   textLeft?: boolean;
+  url?: string;
 }
 
 export default Project;
